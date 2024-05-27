@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem 5rem;
+}
+body header {
+  margin-top: 20px;
+}
+body header section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+body header section .avatar {
+  display: flex;
+  justify-content: center;
+}
+body header section .avatar img {
+  border-radius: 50%;
+  border: 1px solid rgb(194, 194, 194);
+  background-color: rgba(255, 255, 255, 0.236);
+  padding: 0.5rem;
+  width: 150px;
+}
+body header section .bio {
+  text-align: center;
+}
+body header section .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+body header section .social-media a {
+  transition: 0.2s;
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.236);
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 50%;
+  padding: 10px;
+}
+body header section .social-media a:hover {
+  opacity: 50%;
+}
+body main {
+  margin-top: 20px;
+}
+body main .gallery {
+  display: flex;
+  gap: 10px;
+}
+@media (width <= 900px) {
+  body main .gallery {
+    flex-direction: column;
+  }
+}
+body main .gallery .column {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main .gallery .column > div {
+  background-color: rgba(255, 255, 255, 0.236);
+  border: 1px solid rgb(194, 194, 194);
+}
+body main .gallery .column > div:hover img {
+  opacity: 50%;
+}
+body main .gallery .column > div img {
+  transition: 0.2s;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .gallery .column > div > div {
+  padding: 10px;
+  text-align: center;
+}
+body footer {
+  margin-top: 50px;
+}
+body footer hr {
+  border: 1px solid rgb(194, 194, 194);
+}
+body footer article {
+  margin-top: 10px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
